@@ -1,1 +1,63 @@
-課題の内容を実装
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クイズアプリ</title>
+  <style>
+    .answers {
+      padding: 0;
+    }
+
+    .answers button {
+      display: block;
+      margin: 8px 0;
+    }
+
+    .genre {
+      margin: 0px 0;      
+    }
+    .difficulty {
+      margin: 0px 0;
+    }
+  
+
+  </style>
+</head>
+<body>
+
+  <div>
+    <!-- ようこそ→取得中→問題：番号→正答数に書き換わる -->
+    <h2 id="guide">ようこそ</h2>
+
+
+    <!-- [ジャンル]+${カテゴリー} -->
+    <b>
+    <p id="genre" class="genre"></p>
+    <p id="difficulty" class="difficulty"></p>
+    </b>
+
+
+    <hr>
+
+    <!-- 開始ボタンを押したら、少々お待ちくださいに変わる -->
+    <p id="announce">以下のボタンをクリック</p>
+
+    <!-- クイズ文章がでるところ -->
+    <p id="question" class="question"></p>
+
+
+    <hr>
+    <button id="start-button">開始</button>
+    
+    <!-- 回答ボタンがでる -->
+    <ul id="answers" class="answers"></ul>
+    
+    <!-- ホームへ戻るボタンがでる -->
+    <!-- start-button を書き換えて対処 -->
+
+
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>

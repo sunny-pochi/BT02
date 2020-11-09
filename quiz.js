@@ -88,7 +88,7 @@
     const answers = buildAnswers(quiz);
 
 
-    answers.forEach((answer, index) => {
+    answers.forEach((answer) => {
       const liButton = document.createElement('button');
       liButton.innerText = answer;
       answersContainer.appendChild(liButton);
@@ -125,17 +125,5 @@
 
     return copiedArray;
   };
-
-
-  const unescapeHTML = (str) => {
-    const div = document.createElement('div');
-          div.innerHTML = str.replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/ /g, '&nbsp;')
-          .replace(/\r/g, '&#13;')
-          .replace(/\n/g, '&#10;');
-  };
-
-
 
 })();
